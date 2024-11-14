@@ -5,3 +5,7 @@ CRUD de la tabla materia Create-crear Read-leer Update-actualizar Delete-elimina
 ## Guardar registro
 
 ![image](https://github.com/user-attachments/assets/9cea8c84-d499-415b-9baa-2a041908a640)
+
+## Editar y Borrar registros
+
+![image](https://github.com/user-attachments/assets/89d3ebf0-3c70-435f-a6d9-5529be967566)
