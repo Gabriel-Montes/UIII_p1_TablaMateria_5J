@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block cuerpo %}
+<br>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <div class="card-body">
+                <form action="/editMat/" method="POST"> {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" id="txtcodigo" name="txtcodigo" class="form-control"
+                        value={{mmaterias.codigo}} minlength="6" maxlength="6" readonly required>
+                    </div>
+                    <div class="form-group py-3" >
+                        <input type="text" id="txtnombre" name="txtnombre" class="form-control"
+                        value={{mmaterias.nombre}} maxlength="100" required>
+                    </div>
+                    <div class="form-group ">
+                        <input type="text" id="numcreditos" name="numcreditos" class="form-control"
+                        value={{mmaterias.creditos}} min="1" max="10" required>
+                    </div>
+                    <div class="form-group py-3">
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                    </div><!--FROMULARIO-->
+                </form>
+                <!--This is some text within a card body.-->
+            </div>
+        </div><!--tarjeta-->
+
+
+    </div><!--columna-->
+</div><!--fila-->
+{% endblock %}
